@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hy-project 
-        image: bshrramadan/project:0.1
+        image: bshrramadan/log-output
         ports:
         - containerPort: 80
         imagePullPolicy: IfNotPresent
