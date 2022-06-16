@@ -1,0 +1,1 @@
+$ kubectl create deployment hy-project --image=bshrramadan/project:0.1

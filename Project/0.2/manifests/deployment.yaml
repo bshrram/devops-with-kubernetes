@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hy-project
+  labels:
+    app: hy-project
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hy-project
+  template:
+    metadata:
+      labels:
+        app: hy-project
+    spec:
+      containers:
+      - name: hy-project 
+        image: k3d-registry.localhost:55596/project:0.1
+        ports:
+        - containerPort: 80
+        imagePullPolicy: IfNotPresent

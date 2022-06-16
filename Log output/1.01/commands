@@ -1,0 +1,7 @@
+$ docker tag logoutput bshrramadan/log-output
+
+$ docker push bshrramadan/log-output
+
+$ kubectl create deployment log-output image=bshrramadan/log-output
+
+$ kubectl logs -f log-output-7b4655c6c8-p7cjz
